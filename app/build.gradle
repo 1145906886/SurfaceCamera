@@ -1,6 +1,7 @@
 plugins {
-    id 'com.android.application'
-    id 'org.jetbrains.kotlin.android'
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'maven-publish'
 }
 
 android {
@@ -45,4 +46,18 @@ dependencies {
     implementation "androidx.camera:camera-view:1.2.0-alpha04"
     // If you want to additionally use the CameraX Lifecycle library
     implementation "androidx.camera:camera-lifecycle:1.2.0-alpha04"
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            // Creates a Maven publication called "release".
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.github'
+                artifactId = 'surfaceCamera'
+                version = '1.0.0'
+            }
+        }
+    }
 }
