@@ -4,6 +4,8 @@ plugins {
     id 'maven-publish'
 }
 
+group='com.github.1145906886'
+
 android {
     compileSdk 32
 
@@ -45,9 +47,9 @@ afterEvaluate {
         publications {
             // Creates a Maven publication called "release".
             release(MavenPublication) {
-                groupId = 'com.github'
-                artifactId = 'surfaceCamera'
-                version = '1.0.0'
+                groupId = 'com.github.1145906886'
+                artifactId = 'SurfaceCamera'
+                version = '1.0.3'
             }
         }
     }
