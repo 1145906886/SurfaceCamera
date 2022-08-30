@@ -1,4 +1,4 @@
-package cn.surfacecamera
+package cn.xarequest.mylibrary
 
 import android.Manifest
 import android.app.Activity
