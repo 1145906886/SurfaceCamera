@@ -1,20 +1,4 @@
-pluginManagement {
-    plugins{
-        id "com.github.dcendents.android-maven" version "2.1"
-    }
-    repositories {
-        gradlePluginPortal()
-        google()
-        maven { url 'https://maven.aliyun.com/repository/public/' }
-        maven { url 'https://maven.aliyun.com/repository/google' }
-        mavenLocal()
-        mavenCentral()
-        maven { url "https://jitpack.io" }
-        maven { url 'https://repo1.maven.org/maven2/' }
-        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
-        maven { url "https://mirrors.tencent.com/nexus/repository/maven-public/" }
-    }
-}
+
 rootProject.name = "SurfaceCamera"
 include ':app'
 include ':mylibrary'
